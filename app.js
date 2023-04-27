@@ -52,7 +52,7 @@ const count2 = setInterval(() => {
         let seconds = num - minutes * 60
         if (seconds == 0){
             p3.innerText = `${minutes}:${seconds}0`
-        } else if (seconds > 10) {
+        } else if (seconds < 10) {
             p3.innerText = `${minutes}:0${seconds}`
         } else {
             p3.innerText = `${minutes}:${seconds}`
